@@ -1,0 +1,108 @@
+body{
+	background-image: url('img2.jpg');
+	width:;
+	height: ;
+	}
+
+.img1{
+	width: 265px;
+	height: 235px; 
+	margin:auto;
+	position: absolute;
+	right: 0;
+	left:0;
+}
+.envolope{
+	width: 280px;
+	height: 200px;
+	position: relative;
+	margin: 200px auto;
+
+}
+.envolope .arrow{
+	position: absolute;
+	z-index: 10;
+}
+.envolope .arrow-top{
+	border-top: 90px solid #DDD;
+	border-left: 140px solid transparent;
+	border-bottom: 190px solid transparent;
+	border-right: 140px solid transparent;
+	-webkit-filter: drop-shadow(0 1px 2px #000);
+	filter: drop-shadow(0 1px 2px #060688);
+	transform-origin: center 0%;
+	z-index: 8;
+	
+}
+.envolope .arrow-left{
+	border-top: 90px solid transparent;
+	border-left: 140px solid #DDD;
+	border-bottom: 190px solid transparent;
+	border-right: 140px solid transparent;
+	-webkit-filter: drop-shadow(0 1px 2px #000);
+	filter: drop-shadow(0 1px 2px #060688);
+}
+.envolope .arrow-bottom{
+	border-top: 90px solid transparent;
+	border-left: 140px solid transparent;
+	border-bottom: 190px solid #DDD;
+	border-right: 140px solid transparent;
+	-webkit-filter: drop-shadow(0 1px 2px #000);
+	filter: drop-shadow(0 1px 2px #060688);
+}
+.envolope .arrow-right{
+	border-top: 90px solid transparent;
+	border-left: 140px solid transparent;
+	border-bottom: 190px solid transparent;
+	border-right: 140px solid #DDD;
+	-webkit-filter: drop-shadow(0 1px 2px #000);
+	filter: drop-shadow(0 1px 1px #060688);
+}
+
+/* Animation envolope */
+.animate-it1{
+	-moz-animation: move1 0.8s linear forwards;
+	-webkit-animation: move1 0.8s linear forwards;
+}
+@-moz-keyframes move1 {
+	100% {
+		transform: rotateX(360deg);
+	}
+}
+@-webkit-keyframes move1 {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.animate-it{
+	-moz-animation: move2 0.5s linear forwards;
+	-webkit-animation: move2 0.5s linear forwards;
+}
+
+@-moz-keyframes move2 {
+	100% {
+		transform: rotateX(-180deg);
+	}
+}
+@-webkit-keyframes move2 {
+	100% {
+		transform: rotateX(-180deg);
+	}
+}
+.animate-img {
+	-moz-animation: move3 2.5s linear forwards;
+	-webkit-animation: move3 2.5s linear forwards;
+}
+@-moz-keyframes move3 {
+	100% {
+		bottom: 150px;
+		z-index: 9;
+	}
+}
+@-webkit-keyframes move3 {
+	100% {
+		bottom: 150px;
+		z-index: 9;
+	}
+}
